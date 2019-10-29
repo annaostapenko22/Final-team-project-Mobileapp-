@@ -1,0 +1,29 @@
+%h2-set {
+  font-family: 'Raleway';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1ab798;
+  text-align: center;
+}
+
+%h2-before {
+  display: inline-block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgb(83, 91, 100);
+  opacity: 0.4;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+%h2-after {
+  display: inline-block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  opacity: 0.4;
+  background-color: rgb(83, 91, 100);
+  margin-left: 10px;
+  vertical-align: middle;
+}

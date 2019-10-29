@@ -1,0 +1,160 @@
+/*SECTION FEATURES*/
+
+.features {
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  &__title {
+    @extend %h2-set;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 24px;
+
+    &::before {
+      @extend %h2-before;
+    }
+
+    &::after {
+      @extend %h2-after;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #282528;
+    text-align: center;
+    letter-spacing: -0.3px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__item-name {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #282528;
+    margin-bottom: 18px;
+  }
+
+  &__item-text {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #282528;
+  }
+
+  &__item {
+    margin-bottom: 35px;
+    display: flex;
+    padding-left: 6px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 28px;
+      height: 30px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 30px;
+    }
+  }
+
+  &__item-wrapper {
+    width: 200px;
+  }
+
+  &__phone {
+    display: none;
+  }
+}
+
+.features__list--first .features__item:nth-of-type(1)::before {
+  background-image: url("../images/icon-board.png");
+}
+
+.features__list--first .features__item:nth-of-type(2)::before {
+  background-image: url("../images/icon-device-hub.png");
+}
+
+.features__list--first .features__item:nth-of-type(3)::before {
+  background-image: url("../images/icon-thumb-up.png");
+}
+
+.features__list--second .features__item:nth-of-type(1)::before {
+  background-image: url("../images/icon-star.png");
+}
+
+.features__list--second .features__item:nth-of-type(2)::before {
+  background-image: url("../images/icon-notification.png");
+}
+
+.features__list--second .features__item:nth-of-type(3)::before {
+  background-image: url("../../images/icon-share.png");
+}
+
+@media (min-width: 710px) {
+  .features {
+    padding-top: 116px;
+    padding-bottom: 115px;
+
+    &__title {
+        font-size: 28px;
+        margin-bottom: 50px;
+      }
+
+      &__subtitle {
+        font-size: 18px;
+        line-height: 36px;
+        width: 630px;
+        margin-bottom: 50px;
+      }
+
+      &__item {
+        margin-bottom: 100px;
+        padding: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+          }
+      }
+
+      &__content {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__item-wrapper {
+        width: 260px;
+      }
+  }
+}
+
+@media (min-width: 1118px) {
+  .features {
+    padding-bottom: 60px;
+
+    &__phone {
+        display: inline-block;
+      }
+
+      &__title {
+        margin-bottom: 80px;
+      }
+
+      &__subtitle {
+        width: 1000px;
+        margin-bottom: 80px;
+      }
+  }
+  
+  .features__list--second,
+  .features__list--first {
+    padding-top: 80px;
+  }
+}
