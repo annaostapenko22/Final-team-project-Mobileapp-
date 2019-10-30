@@ -4,6 +4,22 @@
 @import './normalize.scss';
 @import './helpers/fonts.scss';
 @import './helpers/base.scss';
+@import './helpers/variables.scss';
+@import './helpers/placeholders.scss';
+@import './helpers/mixin.scss';
+
+@import './sections/header.scss';
+@import './sections/features.scss';
 
 @import './sections/watch-video.scss';
+
+
 @import './sections/footer.scss';
+// @import './helpers/normalize';
+
+// @import './helpers/fonts.scss';
+
+// @import './helpers/base.scss';
+
+
+
