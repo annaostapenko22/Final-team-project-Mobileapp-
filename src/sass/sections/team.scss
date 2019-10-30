@@ -16,7 +16,6 @@ body {
   color: #062033;
   font-family: "OpenSansBd";
   font-weight: 700;
-  text-align: center;
 }
 
 img {
@@ -81,15 +80,16 @@ img {
 
 /*   TEAM CARDS   */
 
-.team__list-image {
+.team-list-image {
   transition: all 0.2s linear;
   margin-bottom: 30px;
   padding: 0;
-  margin: 0;
+  // margin: 0 auto;
 }
 
 .team__list-card {
   position: relative;
+  margin: 0 auto;
 }
 
 .team__list-card-overlay {
@@ -105,6 +105,7 @@ img {
   transition: all 0.2s linear;
   z-index: 1;
 }
+
 
 .team__list-item:hover .team__list-card-overlay {
   opacity: 1;
