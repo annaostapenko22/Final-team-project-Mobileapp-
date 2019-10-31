@@ -4,7 +4,7 @@
       .cls-1 {
         font-size: 22px;
         fill: #1ab798;
-        font-family: Raleway;
+        font-family: Raleway, sans-serif;
         font-weight: 600;
       }
     </style>

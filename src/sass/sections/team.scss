@@ -31,6 +31,10 @@ img {
 
 /*  TEAM SECTION */
 
+.team {
+  padding-top: 60px;
+}
+
 .team__title {
   display: block;
   font-size: 18px;
@@ -38,34 +42,19 @@ img {
   color: #1ab798;
   font-family: "OpenSansBd";
   text-transform: uppercase;
-  padding-top: 60px;
+  // padding-top: 60px;
   margin: 0 auto;
   text-align: center;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .team__title::before {
-  background-image: url("../images/line.png");
-  display: block;
-  content: "";
-  width: 60px;
-  height: 3px;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 210px;
-  top: 76px;
+  @extend %h2-before;
 }
 
 .team__title::after {
-  background-image: url("../images/line2.png");
-  display: block;
-  content: "";
-  width: 60px;
-  height: 3px;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 16px;
-  top: 76px;
+  @extend %h2-after;
 }
 
 .team__list-description {
@@ -73,9 +62,10 @@ img {
   line-height: 26px;
   color: #062033;
   font-family: "OpenSansBd";
-  margin-top: 40px;
+  // margin-top: 40px;
   margin-bottom: 52px;
   padding: 0 10px;
+  text-align: center;
 }
 
 /*   TEAM CARDS   */
@@ -212,7 +202,7 @@ input[type="radio"].visually-hidden {
   font-family: "OpenSansS";
   font-weight: 600;
   text-align: center;
-  margin-top: 20px;
+  // margin-top: 20px;
 }
 
 .team__list-workposition {
@@ -223,6 +213,9 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   text-align: center;
   margin-top: 4px;
+  // margin-bottom: 54px;
+}
+.team__list-item {
   margin-bottom: 54px;
 }
 
