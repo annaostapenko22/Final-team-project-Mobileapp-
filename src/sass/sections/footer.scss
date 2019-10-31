@@ -74,6 +74,7 @@ input {
   border-radius: 3px;
   background-color: #fff;
   margin-bottom: 25px;
+  padding: 10px;
 }
 
 textarea {
@@ -81,6 +82,8 @@ textarea {
   width: 270px;
   height: 174px;
   margin-bottom: 45px;
+  padding: 10px;
+
 }
 
 input::placeholder,
@@ -89,7 +92,7 @@ textarea::placeholder {
   line-height: 24px;
   color: #c1c1c1;
   font-family: "OpenSansR";
-  padding-left: 20px;
+  // padding: 10px;
 }
 
 form {
