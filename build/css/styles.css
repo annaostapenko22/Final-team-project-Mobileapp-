@@ -1712,6 +1712,8 @@ address p {
     height: 44px;
     background-repeat: no-repeat;
     position: absolute;
+    top: 90px;
+    left: 25px;
   }
 
   .feedback__list-description {
@@ -1908,6 +1910,7 @@ address p {
     height: 44px;
     background-repeat: no-repeat;
     position: absolute;
+    left: 130px;
   }
 
   .feedback__list-description {
